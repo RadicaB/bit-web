@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge" />
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+</head>
+<body>
+  <!-- <form action="https://neki-server.com/service.php" method="get">  <!-- get, put, post -->
+    <form action="./server.html" method="get">
+        <p>Unesite ime</p>
+        <br/>
+    <br/>
+    <input type="text name="ime" minlength="5" />
+    <br/>
+    <br/>
+    <p>Unesite prezime</p>
+    <br/>
+    <br/>
+    <input type="text name="prezime" required />
+    <br/>
+    <br/>
+    <!--<input type="submit" value="Posalji"/>-->
+    <p>What's your favorite food?"</p>
+    <input type="radio"name="food" value="pizza" /> <label>Pizza</label>
+    <input type="radio"name="food" value="pasta" /> <label>Pasta</label>
+    <input type="radio"name="food" value="burger" /> <label>Burger</label>
+    <br/>
+    <br/>
+    <p>What's your favorite food?"</p>
+    <input type="checkbox"name="music[]" value="rock" /> <label>Rock</label>
+    <input type="checkbox"name="music[]" value="jazz" /> <label>Jazz</label>
+    <input type="checkbox"name="music[]" value="folk" /> <label>Folk</label>
+    <br/>
+    <br/>
+        <label>Choose your size</label>
+        <br/>
+        <br/>
+        <select multiple name="options">
+    <option >Small</option>
+    <option >Medium</option>
+    <option >Large</option>
+        </select>
+    <br/>
+    <br/>
+    <label>Insert some text</label>
+    <br/>
+    <br/>
+    <textarea name="blog" cols="60" rows="20" placeholder="Please write something" ></textarea>
+    <br/>
+    <br/>
+    <input type="file" name="slika" />
+    <button>Posalji</button>
+    <input type="reset" />
+    <button>Reset</button>
+  </form>
+<ul>
+<li class="ingridient">crni luk</li>
+<li class="ingridient">persun</li>
+<li class="ingridient selected-ingredient">pileci file</li>
+<li class="ingridient">vegeta</li>
+</ul>
+</body>
+</html>
