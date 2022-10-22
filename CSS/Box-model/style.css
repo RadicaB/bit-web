@@ -1,0 +1,158 @@
+p.one {
+    width: 400px;
+    height: 500px;
+    background-color: yellow;
+}
+
+p.two {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(231, 142, 142);
+}
+
+p.three {
+    max-width: 300px;
+    height: 500px;
+    background-color: yellow;
+    overflow: hidden;
+    }
+    
+p.four {
+    max-height: 200px;
+    height: 500px;
+    background-color: rgb(231, 142, 142)
+    }
+
+p.five, p.six {
+    background-color: rgb(241, 241, 101);
+    border-width: 5px;
+    }
+    
+p.five {
+    border: dotted thick red;
+    }
+
+p.six {
+    border-style: solid;
+    border-color: green;
+}
+p.seven, p.eight {
+    background-color: pink;
+    padding: 50px 50px;
+    }
+p.eight {
+    padding: 50px 0px 0px 0px;
+}
+p.nine {
+    background-color: pink;
+    width: 300px;
+    margin: 50px;
+}
+p.ten {
+    background-color: pink;
+    width: 400px;
+    margin: auto;
+}
+p.eleven {
+    background-color: pink;
+    width: 200px;
+    margin-left: 100px;
+}
+p.twelve, p.thirteen, p.forteen {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: pink;
+    padding: 0 0; 
+}
+.twelve {
+    width: 300px;
+}
+.thirteen {
+    width: 400px;
+}
+.forteen {
+    width: 200px;
+}
+p.fifteen, p.sixteen, p.seventeen {
+    margin-right: 20px;
+    background-color: pink;
+    padding: 0 0; 
+}
+.fifteen {
+    width: 300px;
+    display: inline-block;
+}
+.sixteen {
+    width: 400px;
+    display: none;
+}
+.seventeen {
+    width: 200px;
+    display: inline-block;
+    visibility: hidden;
+}
+h1 {
+    width: 960px;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: darksalmon;
+    font-family: 'BlinkMacSystemFont';
+    color: firebrick;
+    box-shadow: 5px 5px 10px red;
+    border-radius: 20px;
+}
+.circles {
+    list-style-type: circle;
+}
+.squares {
+    list-style-type: square;
+}
+.alphabetics {
+    list-style-type: lower-alpha;
+}
+.roman {
+    list-style-type: upper-roman;
+}
+.images-outside, .images-inside {
+    list-style-image: url(./flower-emoji.png);
+    width: 200px;
+}
+.images-inside {
+    background-color: burlywood;
+    list-style-position: inside;
+}
+.table-phones {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial;
+    font-size: 17px;
+    border-collapse: collapse;
+}
+.short {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.long {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header {
+    background-color: rgb(202, 62, 62);
+    height: 40px;
+    color: white;
+}
+img {
+    height: 100px;
+}
+.second {
+    background-color: rgb(192, 192, 192);
+}
+.first:hover {
+    background-color: darkgoldenrod;
+}
+.second:hover {
+    background-color: darkgoldenrod;
+}
