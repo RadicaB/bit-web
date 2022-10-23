@@ -152,15 +152,36 @@
             <td>128GB</td>
         </tr>
     </table>
-
     <br>
+    <br>
+    <fieldset id="fieldset">
+        <legend class="legend">
+        <br><br>Form<span class="get">Get</span></legend>
+        <hr>
+        <br>
+        <label for="fname">Full Name</label><br>
+        <input class="input" type="text" name="name" id="fname" placeholder="Full Name"><br>
+        <label for="email">Email</label><br>
+        <input class="input" type="email" name="email" id="email" placeholder="Email"><br>
+        <label for="number">Contact Number</label><br>
+        <input class="input" type="number" name="number" id="number" placeholder="Contact Number"><br>
+        <label for="address">Address</label><br>
+        <input class="input" type="text" name="address" id="address" placeholder="Adress"><br>
+        <button class="submit-button">Submit</button>
+    </fieldset>
     <hr>
     <br>
     <br>
-    <button>Hello</button>
-    <a href="https://youtube.com/" target="_blank">YouTube Link</a>
-    <p>Some paragraph</p>
+    <button class="subscribe-button">SUBMIT</button>
+    <p> Click on this because it will be funny: </p>
+    <a class="link" href="https://youtube.com/" target="_blank">YouTube Link</a>
+    <br>
+    <br>
+    <br>
     <style>
+        .link {
+            cursor: url(giphy.gif), pointer;
+        }
         .subscribe-button {
             background-color: rgb(200, 0, 0);
             color: white;
@@ -236,8 +257,7 @@
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         }
     </style>
-    <button class="subscribe-button">SUBSCRIBE</button>
-        
+    <button class="subscribe-button">SUBSCRIBE</button> 
     <button class="join-button">JOIN</button>
     <button class="tweet-button">Tweet</button>
     </body>
