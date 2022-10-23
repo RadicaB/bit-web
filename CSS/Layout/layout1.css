@@ -1,0 +1,144 @@
+.parent {
+    position: relative;
+    height: 85%;
+    width: 85%;
+    background-color: rgb(253, 243, 248);
+}
+
+p {
+    font-family: Arial;
+    color: rgb(68, 2, 68);
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#first-child {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 60px;
+}
+#second-child {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    margin-left: 20px;
+}
+
+#third-child {
+    position: absolute;
+    bottom:0;
+    left: 30%;
+}
+
+.link {
+    position: fixed;
+    accent-color: purple;
+    bottom:0px;
+    right: 0px;
+    float: right
+}
+
+h1 {
+    font-family: Arial;
+    color: orange
+}
+
+#main {
+    background-color: rgb(235, 231, 231);
+    height: 300px;
+    width: 870px;
+}
+
+#line {
+    background-color: orange;
+    height: 55px;
+    width: 820px;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.block1 {
+    position: absolute;
+    background-color: rgb(202, 199, 199);
+    height: 35px;   
+    width: 90px;
+    top: 15px;
+    padding-top: 12px;
+    font-family: Lucida Sans;
+    text-align: center;  
+    left: 15px;
+}
+
+.block2 {
+    position: absolute;
+    background-color: orange;
+    height: 35px;
+    width: 90px;
+    top: 15px;
+    padding-top: 12px;
+    font-family: Lucida Sans;
+    text-align: center;  
+    margin-left: 103px;    
+}
+.block3 {
+    position: absolute;
+    height: 35px;
+    width: 90px;
+    top: 15px;
+    padding-top: 12px;
+    background-color: rgb(235, 231, 231);
+    font-family: Lucida Sans;
+    text-align: center;  
+    margin-left: 202px; 
+    display: block;   
+}
+
+.submeni1 {
+    position: relative;
+    z-index:1;
+    height: 25px;
+    top: 15px;
+    width: 310px;
+    background-color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.submeni2 {
+    position: relative;
+    top: 15px;
+    height: 25px;
+    width: 310px;
+    background-color: rgb(235, 231, 231);
+    padding: 12px;
+    text-align: left;
+}
+
+.submeni3 {
+    position: relative;
+    top: 15px;
+    height: 25px;
+    width: 310px;
+    background-color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.block4 {
+    position: absolute;
+    background-color: orange;
+    height: 35px;
+    width: 90px;
+    top: 15px;
+    padding-top: 12px;
+    font-family: Lucida Sans;
+    text-align: center;  
+    margin-left: 300px;   
+    z-index:0; 
+}

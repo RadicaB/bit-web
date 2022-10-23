@@ -1,0 +1,91 @@
+.parent {
+position: relative;
+}
+
+h4 {
+    color: indianred;
+    opacity: 0,7;
+    font-family: Verdana;
+}
+
+.child-one {
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+}
+
+.child-two {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+}
+
+.child-three {
+    background-color: palegoldenrod;
+    width: 200px;
+    height: 200px;   
+}
+
+.second {
+    position: relative;
+}
+
+.first-child {
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 10;
+}
+
+.second-child {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: -100px;
+    margin-left: 100px;
+    z-index: 0;
+}
+
+.third-child {
+    background-color: palegoldenrod;
+    width: 200px;
+    height: 200px;   
+    position: relative;
+    margin-top: -100px;
+    margin-left: 200px;
+    z-index: -1;
+}
+
+.third-parent {
+    position: relative;
+    bottom: -400px;
+}
+
+.child-four {
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right:0;
+    bottom:200px;
+}
+
+.child-five {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right:100px;
+    bottom:100px;
+}
+
+.child-six {
+    background-color: palegoldenrod;
+    width: 200px;
+    height: 200px;   
+    position: absolute;
+    right:200px;
+    bottom:0px;
+}

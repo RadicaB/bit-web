@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+    align-items: center;
+
+  
+}
+    /*margin: 200px;
+    position: relative; /*ako paren nema position, child se pomeri do body/html koda tj do vrh stranice
+    parentu dajemo relative samo da bi se child nalepio na njega, da je i parent apsolute, svi bi bili na vrhu */
+
+/*h1 {
+    background-color: orange;
+    width: 200px;
+    /*position: fixed;*/
+   /* top: 0;
+    right: 0;
+    z-index: -1;
+}*/
+/*#first-child {
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+#second-child {
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+#second-child p {
+    /*position: sticky; /*kad stavimo relative, on u odnosu na svoju poziciju u html-u se samo pomeri 30px i denso*/
+   /* top: 30px;
+    right: 30px;
+    width: 200px;
+    background-color: oran;
+    float: left;
+}*/
+.parent>div {margin-top: 30px;}
+
+#first-child {
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+ 
+}
+#second-child {
+    background-color: brown;
+    width: 300px;
+    height: 100x;
+  
+}
+#third-child {
+    background-color: orange;
+    width: 300px;
+    height: 150x;   
+}
