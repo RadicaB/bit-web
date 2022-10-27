@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 218);
+    background-image: url(./bird.png);
+    /*background-position: right top;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: 200px 700px;*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.pic1 {
+    height: 200px;
+    float: right;
+}
+
+.pic2 {
+    width: 200px;
+    display: block;
+    margin: 0 auto; /*-uvek ovako centriramo*/
+}
+
+.pic3 {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+h1 {
+    font-family: 'AutmnEmbrace-Floral', cursive;
+    src: url(../AutumnEmbrace-Floral.woff);
+}
+
+p {
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(255, 123, 0);
+    font-family: 'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+}

@@ -1,0 +1,11 @@
+body {
+    background-image: url(./Flowers\ in\ a\ pot.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: blue;
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+}

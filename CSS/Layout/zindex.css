@@ -36,6 +36,7 @@ h4 {
     height: 200px;
     position: relative;
     z-index: 10;
+    text-align: end;
 }
 
 .second-child {
@@ -46,6 +47,7 @@ h4 {
     margin-top: -100px;
     margin-left: 100px;
     z-index: 0;
+    text-align: end;
 }
 
 .third-child {
@@ -56,6 +58,7 @@ h4 {
     margin-top: -100px;
     margin-left: 200px;
     z-index: -1;
+    text-align: end;
 }
 
 .third-parent {

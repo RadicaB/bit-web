@@ -57,6 +57,7 @@ h1 {
     width: 820px;
     position: relative;
     display: flex;
+    justify-content: space-between;
     padding: 10px;
     top: 10px;
     left: 10px;
@@ -96,7 +97,7 @@ h1 {
     font-family: Lucida Sans;
     text-align: center;  
     margin-left: 202px; 
-    display: block;   
+    flex-direction: column;
 }
 
 .submeni1 {
