@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../normalize.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge" />
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: rgb(196, 196, 196);
+        }
+        .container1 {
+            border: thick solid pink;
+            background-color: rgb(50, 50, 182);
+            width: 500px;
+        }
+        p {
+            color: white;
+            font-family: Calibri;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            height: 20px;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 0px 10px 0px 10px;
+            height: 200px;
+        }
+        .box {
+            padding: 5px;
+            min-height: 30px;
+            width: 200px;
+            color: white;
+            font-family: 'Lucida Sans';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }     
+
+        .box1 {
+            background-color:  orange;
+        }
+        .box2 {
+            background-color: coral ;
+        }
+        .box3 {
+            background-color: red;
+            display: flex;
+            flex-basis: 1;
+            /*height: 100px;*/
+            align-self: stretch;
+            margin-top: 50px;
+            margin-bottom: 50px;
+ }
+
+.box4 {
+    background-color: rgb(196, 195, 195);
+}
+
+.box5 {
+    background-color: rgb(128, 128, 128);
+}
+
+.container2 {
+    border: 7px solid rgb(255, 255, 255);
+    background-color: white;
+    display: flex;
+    height: 70px;
+    width: 500px;   
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+    flex-grow:1;
+}
+.css {
+    background-color: rgb(219, 183, 189);
+    width: 70px;
+}
+.is {
+    background-color: rgb(158, 225, 245);
+    width: 40px;
+}
+.awesome {
+    background-color: rgb(196, 235, 134);
+    width: 100px;
+}
+
+
+    </style>
+</head>
+    <body>
+        <div class="container1"> <p>CSS Flexbox Cheatsheet</p>
+        <div class="container">           
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+        <div class="container2">
+            <div class="centered css">CSS</div>
+            <div class="centered is">Is</div>
+            <div class="centered awesome">Awesome</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../normalize.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge" />
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background-color: orange;
+            height: 50px;
+            border-radius: 5px 5px 5px 5px;
+            
+        }     
+        .container {
+            height: 11vh;
+            width: 60vh;
+            margin: 0 auto;
+            border: solid rgb(104, 8, 214);
+            background-color: rgb(158, 90, 221);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: white;
+            font-family: Arial;
+        }
+
+.box1, .box3 {
+        width: 50px;
+        margin: 5px;
+        }
+.box2 {    
+    flex-grow: 1;
+}
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+    </body>
+</html>

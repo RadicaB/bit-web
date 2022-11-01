@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.container1 {
+    width: 960px;
+}
+
+.navigation {
+    position: relative;
+    height: 50px;
+    width: 960px;
+    top: 20px;
+    background-color: rgb(168, 35, 35);
+}
+
+.list {
+    position: relative;
+    display: flex;
+    float: right;
+    top: 15px;
+    padding-right: 20px;
+    color: white;
+    font-family:'Segoe UI';
+    font-size: 16px;
+    font-weight:500;
+    list-style-type: none;
+}
+main {
+    width: 960px;
+    display: flex;
+    position: relative;
+    top: 15px;
+    width: 960px;
+}
+
+.logo {
+    position: relative;
+    width: 960px;
+}
+.container2 {
+    position: relative;
+    width: 952px;
+    height: 230px;
+    top: 20px;
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    Display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-family: Verdana;
+    width: 300px;
+}
+.article1 {
+    height: 200px;
+    background-color:brown;
+    margin-top: 7px;
+    color: white;
+    font-size: 20px;
+}
+.article2{
+    height: 200px;
+    width: 300px;
+    background-color:rgb(37, 37, 71);
+    color: white;
+    margin-top: 7px;
+    font-size: 20px;
+}
+table {
+    background-color: rgba(250, 192, 1, 0.856);
+    font-family: Verdana;
+    color: midnightblue;
+    height: 230px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+.article3 {
+    width: 300px;
+    height: 400px;
+}
+.container3 {
+    position: relative;
+    width: 625px;
+    height: 220px;
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text {
+    position: relative;
+    width: 300px;
+    font-size: 18px;
+    font-family: Verdana;
+    justify-content: flex-start;
+    color: midnightblue;
+}
+.article6 {
+    height: 200px;
+    width: 300px;
+    background-color: gold;
+    margin-top: 7px;
+    color: white;
+    font-size: 20px;
+}
+.article7 {
+    height: 200px;
+    width: 300px;
+    background-color: forestgreen;
+    margin-top: 7px;
+    color: white;
+    font-size: 20px;
+}
+.container4 {
+    position: relative;
+    width: 952px;
+    height: 220px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    position: relative;
+    bottom: 0px;
+    background-color: midnightblue;
+    color: white;
+    height: 40px;
+    width: 100%;
+    padding: 0; 
+    margin: 0;  
+    display: flex;
+    align-items: center;
+}
