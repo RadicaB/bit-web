@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+.col-header-footer-custom {
+    display: flex;
+    background-color: #495057;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    
+    .list-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list-group-item {
+    background-color: #495057;
+    color: white;
+    font-size: 0.5rem;
+    }
+}
+
+.profile-pic {
+    background-image: url(../img/profile.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 1em;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+
+
+  
+    
+}
+
+
+    
+    

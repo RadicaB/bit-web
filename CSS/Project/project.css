@@ -1,0 +1,829 @@
+body {
+    margin:0;
+    padding:0;
+    border:0;
+    /*background-color: rgb(10, 10, 10);*/
+    box-sizing: border-box;
+}
+
+.container {
+    /*padding: 0 1em;*/
+    width: 100%;
+    /*background-color: rgb(250, 231, 243);*/
+    display: grid;
+    align-items: center;
+    /*max-width: 768px;*/
+    gap: 2.2rem;
+    
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    Tablet - 768px
+    Desktop - 1200px*/
+}
+
+#prvi {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/Roboto-Bold.ttf');
+    color: grey;
+    font-size: 20px;
+}
+
+.build {
+    color: orange;
+    border: 5px solid gray;
+    border-right: thick gray;
+    padding: 0px 10px;
+}
+
+#drugi {
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    padding-left: 0;
+}
+
+.navigation {
+    min-width: 90%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url('./fonts/glyphicons-halflings-regular.woff');
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list {
+    background-color: lightskyblue;
+    padding: 15px 15px;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+#treci {
+    background-image: url(./images/banner3.jpg);
+    display: block;
+    max-width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weBuild {
+    font-family: 'Roboto', sans-serif;
+    src: url('./fonts/Roboto-Light.ttf');
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 55px;
+}
+
+.button {
+    background-color: rgb(33, 118, 197);
+    font-family: 'Roboto', sans-serif;
+    src: url('./fonts/Roboto-Light.ttf');
+    color: white;
+    border-radius: 25px;
+    height: 45px;
+    width: 180px;
+    border: 0;
+}
+
+@media (min-width: 769px) and (max-width:1200px){
+    .container {   
+    width: 100vw;
+    gap:0px;
+    /*background-color: rgb(255, 254, 169);*/
+    grid-template-columns: 50% 1fr;
+    }
+    #prvi, #drugi {
+        align-self: top;
+        margin-block: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-top: 10px;
+        color: white;
+    }
+    #prvi {
+        justify-content: flex-start;
+        grid-row:1/2;
+        grid-column: 1/2;
+        z-index: 1;
+        font-size: 115%;
+        max-width: 100%;
+    }
+    #drugi {
+        justify-content: flex-end;
+        grid-row:2/-1;
+        grid-column: 2/3;
+        z-index: 1; 
+        /*max-width: 100%;*/
+    }
+    .lista {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: end;
+        white-space: nowrap;   
+        font-size: 110%;
+        margin-right: 20px;
+    }
+    .list {
+        background-color: initial;
+        padding: 10px 10px;
+    }
+    .build {
+        border: 5px solid white;
+        border-right: thick white;
+    }
+    #treci {
+        display: flex;
+        font-size: clamp (3rem, 1rem +10vw, 7rem);
+        width: 100%;
+        height: 70vh;
+        background-image: url(./images/banner3.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-items: center;
+        /*background-position: inherit;
+        max-width: 100%;;
+        min-height: 100vh;*/
+        grid-column:1/3;
+        grid-row: 1/3;
+        z-index: 0;
+    }
+    .weBuild {
+        font-size: 47px;
+    }
+    .button {
+        font-size: 22px;
+        height: 50px;
+        width: 200px;
+        border: 0;
+    }
+    .titles1, .titles2, .titles3 {
+        grid-column: span 2;
+        margin-bottom: 1rem;
+    }
+    #cetvrti {
+        grid-column: span 2;
+        width: 90vw;
+        align-items: flex-start;
+        margin-left: -10px;
+    }
+    .tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 90vw;
+    }
+    .centered {
+        max-width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .centeredTab {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start;
+    }
+    .textual1 {
+        max-width: 50%;
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+    .medium {
+        align-self: top;
+        justify-content: flex-start;
+    }
+    .about {
+        min-width: 45vw ;
+        background-size: 50% auto;
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+    .textual2 {
+        min-width: 100%;
+        margin-right: 10%;
+        margin-top: 0;
+        grid-column: span 2;
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+    /*.textual1, .textual2 {
+        margin-left: 6vw;*/   
+    #peti {
+        grid-column: span 2;
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .person1, .person2, .person3 {
+        max-width: 420px;
+    }
+    #sesti {
+        grid-column: span 2;
+    } 
+    .squares {
+        display: flex;
+        width: auto;
+        font-size: 20px;
+    }
+    .uno, .dos, .tres, .cuatro {
+        padding-top: 50px;
+        padding-block: 20px;
+    }
+    #sedmi {
+        /*grid-column: span 2; */
+        margin-left: 40px;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        }
+    .centeredTab1 {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start;
+    }
+    .form{
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+    }
+    .fields-first {
+        display: flex;
+        justify-content: space-between;
+        flex-grow:1;
+        margin-left: auto;
+    }
+    .one {
+        min-width: 50%;
+        flex: 1;
+    }
+    .fields-second {
+        /*min-width: 800px;*/
+        margin-top: 25px;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        width: 90vw; 
+    }
+    .two {
+        min-width: 50%;
+        flex: 1;
+    }
+    .submit {
+        border-radius: 5px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1201px){
+    .container {   
+    width: 100vw;
+    gap:0px;
+    align-items: center;
+    /*background-color: rgb(213, 241, 213);*/
+    grid-template-columns: 50% 1fr;
+    }
+    #prvi, #drugi {
+        align-self: top;
+        margin-block: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-top: 10px;
+        color: white;
+    }
+    #prvi {
+        justify-content: flex-start;
+        grid-row:1/2;
+        grid-column: 1/2;
+        z-index: 1;
+        font-size: 180%;
+        max-width: 100%;
+    }
+    #drugi {
+        justify-content: flex-end;
+        grid-row:2/-1;
+        grid-column: 2/3;
+        z-index: 1; 
+        /*max-width: 100%;*/
+    }
+    .lista {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: end;
+        white-space: nowrap;   
+        font-size: 95%;
+        margin-right: 30px;
+    }
+    .list {
+        background-color: initial;
+        padding: 20px 20px; 
+    }
+    .build {
+        border: 5px solid white;
+        border-right: thick white;
+    }
+    #treci {
+        display: flex;
+        font-size: clamp (3rem, 1rem +10vw, 15rem);
+        min-width: 100%;
+        height: 100vh;
+        background-image: url(./images/banner3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-items: center;
+        grid-column:1/3;
+        grid-row: 1/3;
+        z-index: 0;
+    }
+    .weBuild {
+        font-size: 65px;
+        margin-bottom: 0px;
+    }
+    .button {
+        font-size: 22px;
+        height: 50px;
+        width: 200px;
+        border: 0;
+    }
+    #cetvrti {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-around;
+    }
+   .centered {
+        max-width: 100%;
+        /*margin-right: clear;
+        padding-left: clear;
+        align-items: flex-start;*/
+    }
+    .centeredTab {
+        max-width: 30%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }   
+    .titles1, .titles2, .titles3 {
+        grid-column: span 2;
+        margin-bottom: 1rem;
+    }
+    .geometry1 {
+        min-width: 140px;
+    }
+    .tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .about {
+        height: 600px;
+        width: 500px;
+        margin-right: 3%;
+        margin-left: 3%;
+        flex-shrink: 0;
+    }
+    .textual1, .textual2{
+        max-width: 515px;
+    }
+    #peti {
+        grid-column: span 2;
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        max-width: 80%;
+        gap: 20px;
+        padding-left: 4%;
+    }
+    .person1, .person2, .person3 {
+        max-width: 550px;
+    }
+    #sesti {
+        grid-column: span 2;  
+    }
+    #sedmi {
+        display: flex;
+        justify-self: center;
+        margin-left: 108%;
+       /*grid-column: span 2;
+        flex-direction: column;*/
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+    .fields-first {
+        display: flex;
+        justify-content: space-between;
+        grid-template-rows: 100%;
+        align-items: center;
+        flex: 1    
+    }
+    .one {
+        min-width: 30%;
+        flex: 1;
+    }
+    .fields-second {
+        /*min-width: 800px;*/
+        margin-top: 35px;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .two {
+        min-width: 30%;
+        margin-top: 35px;
+        flex: 1;
+    }
+    .submit {
+        border-radius: 5px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+}
+
+/*.centered {
+    max-width: 88%;
+}*/
+
+#cetvrti {
+    margin-left: 6%;
+    margin-right: 6%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/fontawesome-webfont.woff');
+}  
+
+.big {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/glyphicons-halflings-regular.woff');
+    font-size: 50px;
+    font-weight: 500px;
+    margin-bottom: 12px;
+    margin-top:30px;
+    color: black;
+    text-align: center;
+}
+.textual1, .textual2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 4px, 2rem;
+}
+.medium {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/glyphicons-halflings-regular.woff2');
+    font-size: 33px;
+    font-weight: 900px;
+    color: rgb(78, 181, 250);
+    margin-bottom: 2px;
+    margin-top: 0px;
+    /*margin-left: initial;*/
+
+}
+.dark {
+    color: rgb(80, 79, 79);
+    font-size: 22px;
+    font-weight: 500;   
+    line-height: 35px;
+     /*margin-left: initial;*/
+}
+
+.textual {
+   padding-left: 3%;
+}
+
+.list1 {
+    list-style-image: url(./images/arrow_bullet.png);
+    color: grey;
+    line-height: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/fontawesome-webfont.woff');
+    font-size: 20px;
+    padding-block: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.geometry {
+    width: 100%;
+    text-align: center;
+}
+.geometry1 {
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    border-top: 2px solid black;
+}
+
+.geometry2 {
+    display: inline-block;
+    width:25px;
+    height: 25px;
+    border: 2px solid black;
+    margin: 0px 10px;
+    transform: rotate(45deg);
+    position: relative;
+    top: -9px;
+}
+
+.about {
+    background-image: url(./images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 640px;
+    max-width: initial;
+    margin-bottom: 20px;
+}
+
+#peti {
+    margin-left: 6%;
+    margin-right: 6%;
+    color: white;
+    justify-content: space-between;
+}
+
+.person1, .person2, .person3 {
+    background-color: lightskyblue;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.8fr 1fr;
+    /*height: 250px;*/
+    padding: 35px 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/Roboto-Bold.ttf');
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 2px;
+}
+
+.image1 {
+    background-image: url(./images/t1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 5em;
+    border-radius: 50%;    
+    background-position: top right 10%;
+    aspect-ratio: 1;
+    border: 4px solid lightskyblue;
+    outline: solid 3px white;
+}
+
+.picture {
+    margin-top: 10px;
+    grid-row: 1 / 2;
+    height: 30px;
+}
+
+.ratings {
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.black {
+    color: black;
+    font-weight: 600;
+    grid-column: 2 / 3;
+    height: 15px;
+    display: flex;
+    align-content: end;
+    margin-bottom: 15px;
+}
+
+.stars {
+    grid-column: 2/3;
+    display: flex;
+    height: 5px;
+    align-items: top;
+    margin: 0;
+    
+}
+.text {
+    grid-column: span 2;
+    display: flex;
+    padding-right: 30px;
+    justify-content: stretch;
+    align-items: flex-start;
+    line-height: 1.7;
+    padding: 5px;
+    /*flex-basis: 100%*/
+}
+
+.image2 {
+    background-image: url(./images/t2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 5em;
+    border-radius: 50%;    
+    background-position: top right 10%;
+    aspect-ratio: 1;
+    border: 4px solid lightskyblue;
+    outline: solid 3px white;
+}
+
+.image3 {
+    background-image: url(./images/t3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 5em;
+    border-radius: 50%;
+    background-position: top right 10%;
+    border: thick white;
+    aspect-ratio: 1;
+    border: 4px solid lightskyblue;
+    outline: solid 3px white;
+}
+
+.squares {
+    box-sizing:border-box;
+    /*display: flex;
+    flex-flow: row wrap;*/
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src:url('./fonts/Roboto-Bold.ttf');
+    color: white;
+    /*background-color: cornflowerblue; */
+}
+
+.square {
+    text-align: center;
+    height: 250px;
+    width: 100%;   
+    gap: 10px; 
+}
+
+.uno {
+    background-color: rgb(92, 199, 163);
+}
+.dos {  
+    background-color: hotpink;
+    margin: 0, auto;
+}
+.tres {
+    background-color: dodgerblue;
+}
+.cuatro {
+    background-color: deepskyblue;
+}
+
+.house {
+    width: 115%;
+    height: 250px;
+}
+
+.slicica {
+    height: 30px;
+    padding-right: 15px;
+}
+
+.socialNet {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.smaller-text {
+    font-size: large;
+    display: flex;
+    display: block;
+}
+
+.map {
+    width: 100%;   
+    height: 400px;
+    flex-grow: 1;
+    flex-basis: auto;
+    grid-template-rows: 100%;
+}
+
+#sedmi {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url('fonts/Roboto-Black.ttf');
+}
+
+.form {
+    color: rgb(70, 69, 69);
+    margin: 0 auto;
+}
+
+.fields-fist {
+    border: solid 1,5px rgb(177, 172, 172);
+    padding: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.one {
+    align-self: stretch;
+    width: 100%; 
+    height: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100;
+}
+
+.fields-second {
+    border: solid 1,5px rgb(177, 172, 172);
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.two {
+    align-self: stretch;
+    width: 100%; 
+    height: 200px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 80vw;
+}
+
+.submit {
+    background-color: orange;
+    color: white;
+    border: 0;
+    height: 55px;
+    width: 150px;
+    /*border-radius: 7px;*/
+    font-weight: 500;
+    font-size: 20px;
+}
+
+footer { 
+    background-color: rgb(46, 44, 44);
+    width: 100vw;
+    color: white;
+    font-family: sans-serif;
+    src: url(fonts/Roboto-Bold.ttf);
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.footer1 {
+    max-width: 100%;
+    /*margin-left: 10%;*/
+    margin-right: 0%;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+.creditentials {
+    display:flex;
+    justify-content: center;
+}

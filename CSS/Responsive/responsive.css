@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(247, 180, 218);
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 960px;
+    min-height: 100vh;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background-color: blue;
+}
+
+@media /*screen and*/ (max-width: 980px) {
+    #content {
+        width: 700px;
+        grid-template-columns: 1fr 1fr;
+    }    
+    .card {
+        background-color: orange;
+    }
+}
+
+@media (max-width: 740px) {
+    #content {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }    
+    .card {
+        background-color: rgb(255, 0, 136);
+    }
+}
+
+
+@media (max-width: 500px) {
+    #content {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }    
+    .card {
+        background-color: rgb(255, 247, 0);
+    }
+}

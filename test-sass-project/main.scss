@@ -1,0 +1,23 @@
+$dark-grey: #567;
+$border-style: 1px solid black;  
+
+@mixin spacing($space) {
+    padding: $space;
+    margin: $space;
+    
+}
+
+
+nav {
+    border: 1px solid black;
+    Ul {
+        background-color: red($color: #000000);
+        @include spacin(20px);
+    }
+    li {
+        background-color: aqua;
+    }
+    p {
+        color: green;
+    }
+}
