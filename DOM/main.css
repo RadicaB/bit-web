@@ -1,0 +1,36 @@
+/*.strong-paragraph {
+    color: tomato;
+}
+.colored-list {
+    background-color: aqua;
+}
+*/
+
+.redText {
+    color: rgb(236, 108, 108);
+}
+.blueBckrgd {
+    background-color: rgb(100, 135, 231);
+}
+.upperCase {
+    background-color: rgb(161, 85, 155);
+    text-transform: uppercase;
+}
+.active {
+    background-color: rgb(247, 247, 148);
+}
+#clock {
+    color: rgb(212, 31, 197);
+    border: solid rgb(165, 232, 235);
+}
+
+.sixthclass {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgb(133, 164, 165);
+}
+
+.alerttt:hover {
+    color: yellow;
+}
