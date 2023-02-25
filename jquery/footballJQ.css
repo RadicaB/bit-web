@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #soccer-field {
+    /*background-image: url(./img/field.png);
+    background-size: cover;
+    height: 500px;
+    width: 800px;
+    position: relative;*/
+
+    width: 50rem;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+  
+  #soccer-field img {
+    display: block;
+    width: 100%;
+  }
+  
+  #soccer-player {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    top: 80px;
+    left: 40px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #player img {
+    display: block;
+    width: 100%;
+  }
+  
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    background-color: orangered;
+    padding: 0.5em 0.75em;
+    border: none;
+    cursor: pointer;
+  }
+

@@ -1,0 +1,13 @@
+
+.bottom-boder {
+    border-bottom: solid red;
+}
+
+.font-color {
+    color: blue;
+}
+
+#list {
+    display: flex;
+    justify-content: space-between;
+}
